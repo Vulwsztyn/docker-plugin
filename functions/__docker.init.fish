@@ -54,6 +54,8 @@ function __docker.init
   __docker.create_abbr dvprune docker volume prune
   __docker.create_abbr dxc docker container exec
   __docker.create_abbr dxcit docker container exec -it
+  __docker.create_abbr drut "docker container run -it -v (pwd):/app -w /app"
+  __docker.create_abbr dsta "docker stop (docker ps -q)"
 
   # Cleanup declared functions
   functions -e __docker.create_abbr
